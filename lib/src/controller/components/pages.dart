@@ -56,8 +56,15 @@ class Pages extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: 70.h),
-           
+            
+           Row
+           ( mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children:[
+           CircleAvatar(radius: 4.r,),
+            CircleAvatar(radius: 4.r,),
+             CircleAvatar(radius: 4.r,),
+              CircleAvatar(radius: 4.r,),
+           ]),
             Spacer(),
             Center(
               child: Container(
