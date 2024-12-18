@@ -47,9 +47,9 @@ class _LoginviewState extends State<Loginview> {
                   Primarytext(text: 'Sign in to your account',
                       fontWeight:FontWeight.w500, fontSize: 15, color: AppColors.textgrey),
                   SizedBox(height: 20.h,),
-                 Customtextform(hintText: 'Enter Email', icon: Icon(Icons.mail_outline)),
+                 Customtextform(hintText: 'Enter Email', icon: Icon(Icons.mail_outline), ),
                   SizedBox(height: 10.h,),
-                  Customtextform(hintText: 'Enter Password', icon:Icon(Icons.lock_outline)),
+                  Customtextform(hintText: 'Enter Password', icon:Icon(Icons.lock_outline),suffixIcon: Icon(Icons.visibility_outlined),),
 
                   SizedBox(height: 20.h,),
                   Custombutton(text: 'Log In'),

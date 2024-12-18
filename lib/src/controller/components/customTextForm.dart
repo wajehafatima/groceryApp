@@ -4,7 +4,8 @@ import '../assets/colors/AppColors.dart';
 class Customtextform extends StatelessWidget {
   final String hintText;
   final Widget icon;
-  const Customtextform({super.key,required this.hintText, required this.icon});
+  final Widget? suffixIcon;
+  const Customtextform({super.key,required this.hintText, required this.icon, this.suffixIcon});
 
   @override
   Widget build(BuildContext context) {
@@ -14,6 +15,7 @@ class Customtextform extends StatelessWidget {
         decoration: InputDecoration(
             prefixIcon: icon,
             hintText:hintText,
+            suffixIcon: suffixIcon,
             fillColor: AppColors.whiteBG,
             filled: true,
             border: InputBorder.none
