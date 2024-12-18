@@ -10,11 +10,12 @@ class Alreadyaccount extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(children: [
-      Primarytext(text: text1, fontWeight: FontWeight.w300, 
+    return Row(mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+      Primarytext(text: text1, fontWeight: FontWeight.w600, 
       fontSize: 15.sp, color:AppColors.textgrey),
       SizedBox(width: 5.w,),
-      Primarytext(text: text2, fontWeight: FontWeight.w300, fontSize: 15, color: AppColors.textBlack),
+      Primarytext(text: text2, fontWeight: FontWeight.w600, fontSize: 15, color: AppColors.textBlack),
     ],);
   }
 }

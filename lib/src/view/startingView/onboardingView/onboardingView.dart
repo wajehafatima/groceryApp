@@ -19,10 +19,10 @@ class _OnboardingviewState extends State<Onboardingview> {
 body: 
 PageView(children: [
   Page1(),
-  Pages(image: Appimages.splash3, title: '  Buy Quality\nDairy Products', subtitle: 'Lorem ipsum dolor sit amet, consetetur\n   sadipscing elitr, sed diam nonumy', buttonText: 'Get Started', onButtonPressed:(){}),
-Pages(image: Appimages.splash2, title: '   Buy Premium\n    Quality Fruits', subtitle: 'Lorem ipsum dolor sit amet, consetetur\n   sadipscing elitr, sed diam nonumy',
+  Pages(image: Appimages.splash2, title: '  Buy Quality\nDairy Products', subtitle: 'Lorem ipsum dolor sit amet, consetetur\n   sadipscing elitr, sed diam nonumy', buttonText: 'Get Started', onButtonPressed:(){}),
+Pages(image: Appimages.splash3, title: '   Buy Premium\n    Quality Fruits', subtitle: 'Lorem ipsum dolor sit amet, consetetur\n   sadipscing elitr, sed diam nonumy',
  buttonText: 'Get Started', onButtonPressed: (){}),
- Pages(image: Appimages.splash1, title: '  Get Discounts\n On All Products', subtitle:'Lorem ipsum dolor sit amet, consetetur\n     sadipscing elitr, sed diam nonumy', buttonText: 'Get Started', onButtonPressed:(){}),
+ Pages(image: Appimages.splash4, title: '  Get Discounts\n On All Products', subtitle:'Lorem ipsum dolor sit amet, consetetur\n     sadipscing elitr, sed diam nonumy', buttonText: 'Get Started', onButtonPressed:(){}),
  ],
  onPageChanged: (int page){
 setState(() {
