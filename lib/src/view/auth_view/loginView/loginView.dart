@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:groceryapp/src/controller/components/customTextForm.dart';
 
 import '../../../controller/assets/appIcons/appIcons.dart';
 import '../../../controller/assets/appImages/appImages.dart';
@@ -46,20 +47,14 @@ class _LoginviewState extends State<Loginview> {
                   Primarytext(text: 'Sign in to your account',
                       fontWeight:FontWeight.w500, fontSize: 15, color: AppColors.textgrey),
                   SizedBox(height: 20.h,),
-                  TextFormField(
-                    decoration: InputDecoration(
-                      prefixIcon: Icon(Icons.mail_outline,color: AppColors.textgrey,),
-                      hintText:'Enter Email',
-                      fillColor: AppColors.whiteBG,
-                      filled: true,
-
-                    ),
-                  ),
+                 Customtextform(hintText: 'Enter Email', icon: Icon(Icons.mail_outline)),
+                  SizedBox(height: 10.h,),
+                  Customtextform(hintText: 'Enter Password', icon:Icon(Icons.lock_outline)),
 
                   SizedBox(height: 20.h,),
                   Custombutton(text: 'Log In'),
                   SizedBox(height: 10.h,),
-                  Alreadyaccount(text1: 'Don\' have an account', text2: 'sign up')
+                  Alreadyaccount(text1: 'Don\'t have an account', text2: 'sign up')
 
                 ],),
             ),

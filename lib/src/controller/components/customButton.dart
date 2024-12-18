@@ -11,7 +11,7 @@ class Custombutton extends StatelessWidget {
       child: Container(
       height: 60,
       width: 380,
-      decoration: BoxDecoration(boxShadow: [BoxShadow(color: AppColors.primarydark,blurRadius: 5)],
+      decoration: BoxDecoration(boxShadow: [BoxShadow(color: AppColors.textgrey,blurRadius: 5)],
       gradient: LinearGradient(
       colors: [
       AppColors.primary,
