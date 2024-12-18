@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:groceryapp/src/controller/components/primaryText.dart';
+
+import '../assets/colors/AppColors.dart';
 class Welcometitle extends StatelessWidget {
   const Welcometitle({super.key});
 
@@ -17,6 +20,6 @@ class Welcometitle extends StatelessWidget {
               ]),
         ],
       ),
-    ),;
+    );
   }
 }

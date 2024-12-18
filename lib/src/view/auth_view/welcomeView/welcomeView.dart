@@ -6,6 +6,7 @@ import 'package:groceryapp/src/controller/assets/colors/AppColors.dart';
 import 'package:groceryapp/src/controller/components/alreadyAccount.dart';
 import 'package:groceryapp/src/controller/components/customButton.dart';
 import 'package:groceryapp/src/controller/components/primaryText.dart';
+import 'package:groceryapp/src/controller/components/welcomeTitle.dart';
 class Welcomeview extends StatefulWidget {
   const Welcomeview({super.key});
 
@@ -23,19 +24,7 @@ class _WelcomeviewState extends State<Welcomeview> {
           width: 638.w,fit: BoxFit.cover,),
           Positioned(top: 0,
             left: 0,right: 0,
-            child: Padding(
-              padding: const EdgeInsets.only(left: 10),
-              child: Column(
-                children: [SizedBox(height: 30.h,),
-                  Row(
-                      children:[
-                    Icon(Icons.arrow_back,color: AppColors.background2,),
-                  SizedBox(width: 140.w,),
-                    Primarytext(text: 'Welcome', fontWeight:FontWeight.w500, fontSize: 18.sp, color:AppColors.background2)
-                  ]),
-                ],
-              ),
-            ),
+            child:Welcometitle()
           ),
           Align(alignment: Alignment.bottomLeft,
             child: Container(height: 358.h,

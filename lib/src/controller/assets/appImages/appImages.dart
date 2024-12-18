@@ -10,5 +10,6 @@ class Appimages {
 
   //auth images
 static String welcome= 'lib/src/controller/assets/appImages/welcome1.jpg';
+  static String login= 'lib/src/controller/assets/appImages/login.jpg';
 
 }
