@@ -88,6 +88,7 @@ class _HomeviewState extends State<Homeview> {
                   ]);
                 },
                 itemCount: images.length,
+                
                 controller: PageController(viewportFraction: 1.0),
                 onPageChanged: (index) {
                   setState(() {
