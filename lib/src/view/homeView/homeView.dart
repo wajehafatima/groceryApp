@@ -15,10 +15,10 @@ class Homeview extends StatefulWidget {
 class _HomeviewState extends State<Homeview> {
   List images = [
     Appimages.home1,
-    Appimages.home5,
-    Appimages.home3,
-    Appimages.home4,
-    Appimages.home5,
+    Appimages.home1,
+    Appimages.home1,
+    Appimages.home1,
+    Appimages.home1,
   ];
   int currentImage = 0;
 
@@ -65,17 +65,26 @@ class _HomeviewState extends State<Homeview> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(top: 50,left: 30),
-                      child: Primarytext(text: '20\% off on your \n  First purchase', fontWeight: FontWeight.bold, fontSize: 25.sp, color: AppColors.textBlack),
+                      padding: const EdgeInsets.only(top: 150,left: 60),
+                      child: Primarytext(text: '20\% off on your \n First purchase', fontWeight: FontWeight.bold, fontSize: 25.sp, color: AppColors.textBlack),
                     ),
-                    Row(mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                      currentImage==0?Icon(Icons.circle,size: 8,color: AppColors.primarydark,):Icon(Icons.circle,size: 8,color: AppColors.whiteBG,),
-                      currentImage==1?Icon(Icons.circle,size: 8,color: AppColors.primarydark,):Icon(Icons.circle,size: 8,color: AppColors.whiteBG,),
-                      currentImage==2?Icon(Icons.circle,size: 8,color: AppColors.primarydark,):Icon(Icons.circle,size: 8,color: AppColors.whiteBG,),
-                      currentImage==3?Icon(Icons.circle,size: 8,color: AppColors.primarydark,):Icon(Icons.circle,size: 8,color: AppColors.whiteBG,),
-                      currentImage==4?Icon(Icons.circle,size: 8,color: AppColors.primarydark,):Icon(Icons.circle,size: 8,color: AppColors.whiteBG,),
-                    ],)
+                    Padding(
+                      padding: const EdgeInsets.only(left: 60,top: 260),
+                      child: Row(mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                        currentImage==0?Icon(Icons.circle,size: 14,color: AppColors.primarydark,):Icon(Icons.circle,size: 10,color: AppColors.whiteBG,),
+                       SizedBox(width: 3.h,),
+                        currentImage==1?Icon(Icons.circle,size: 14,color: AppColors.primarydark,):Icon(Icons.circle,size: 10,color: AppColors.whiteBG,),
+                          SizedBox(width: 3.h,),
+
+                        currentImage==2?Icon(Icons.circle,size: 14,color: AppColors.primarydark,):Icon(Icons.circle,size: 10,color: AppColors.whiteBG,),
+                          SizedBox(width: 3.h,),
+
+                        currentImage==3?Icon(Icons.circle,size: 14,color: AppColors.primarydark,):Icon(Icons.circle,size: 10,color: AppColors.whiteBG,),
+                          SizedBox(width: 3.h,),
+                        currentImage==4?Icon(Icons.circle,size: 14,color: AppColors.primarydark,):Icon(Icons.circle,size: 10,color: AppColors.whiteBG,),
+                      ],),
+                    )
                   ]);
                 },
                 itemCount: images.length,
