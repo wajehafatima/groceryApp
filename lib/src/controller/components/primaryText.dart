@@ -110,4 +110,33 @@ Padding(
     );
   }
 }
-st
+class Calender extends StatefulWidget {
+  const Calender({super.key});
+
+  @override
+  State<Calender> createState() => _CalenderState();
+}
+
+class _CalenderState extends State<Calender> {
+  DateTime? selecteddDate;
+  void datePicker(
+      BuildContext context,)async
+  {
+    DateTime? pickedDate= await showDatePicker(context: context, firstDate: DateTime(1900),
+        lastDate: DateTime(2099));
+    if(pickedDate!=null);
+    setState(() {
+   selecteddDate=pickedDate;
+    });
+  }
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(child: TextButton(onPressed:(){
+        datePicker(context);
+      } , child: Text(selecteddDate!=null? selecteddDate.toString():
+          'Select date')),),
+    );
+  }
+}
+
