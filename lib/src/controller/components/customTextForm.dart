@@ -12,7 +12,9 @@ class Customtextform extends StatelessWidget {
     return  Padding(
       padding: const EdgeInsets.only(left: 60,right: 60,),
       child: TextFormField(
-        decoration: InputDecoration(
+        decoration: InputDecoration(enabledBorder: UnderlineInputBorder(borderSide: BorderSide(color:AppColors.whiteBG),
+          borderRadius: BorderRadius.circular(10)
+        ),
             prefixIcon: icon,
             hintText:hintText,
             suffixIcon: suffixIcon,

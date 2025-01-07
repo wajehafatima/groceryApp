@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:groceryapp/src/view/auth_view/loginView/loginView.dart';
 import 'package:groceryapp/src/view/auth_view/welcomeView/welcomeView.dart';
+import 'package:groceryapp/src/view/homeView/homeView.dart';
 import 'package:groceryapp/src/view/startingView/onboardingView/onboardingView.dart';
 
 void main() {
@@ -35,7 +36,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:Loginview()
+      home://BottomAndTopNavigation()
+        Homeview()
       //Onboardingview()
        //Welcomeview()
     ));

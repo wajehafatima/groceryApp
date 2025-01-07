@@ -12,4 +12,11 @@ class Appimages {
 static String welcome= 'lib/src/controller/assets/appImages/welcome1.jpg';
   static String login= 'lib/src/controller/assets/appImages/login.jpg';
 
+
+  //.....................HomeImages................................
+  static String home1= 'lib/src/controller/assets/appImages/home1.jpg';
+  static String home2= 'lib/src/controller/assets/appImages/home2.jpg';
+  static String home3= 'lib/src/controller/assets/appImages/home3.jpg';
+  static String home4= 'lib/src/controller/assets/appImages/home4.jpg';
+  static String home5= 'lib/src/controller/assets/appImages/home5.jpg';
 }
