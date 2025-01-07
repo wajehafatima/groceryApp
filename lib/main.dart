@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:groceryapp/src/controller/components/primaryText.dart';
 import 'package:groceryapp/src/view/auth_view/loginView/loginView.dart';
 import 'package:groceryapp/src/view/auth_view/welcomeView/welcomeView.dart';
 import 'package:groceryapp/src/view/homeView/homeView.dart';
@@ -37,9 +38,10 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home://BottomAndTopNavigation()
-        Homeview(),
+        //Homeview(),
       //Onboardingview()
-       //Welcomeview()
+       //Welcomeview(
+      Expansion()
     ));
   }
 }
